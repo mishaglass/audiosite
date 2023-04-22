@@ -1,0 +1,46 @@
+@import '../../../scss/variables';
+
+.button {
+  width: 160px;
+  height: 48px;
+  max-width: 160px;
+  max-height: 48px;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary {
+  background-color: $orange;
+  color: $white;
+  &:hover {
+    background-color: $orange_light;
+  }
+}
+
+.secondary {
+  background-color: $white;
+  border: solid $black 1px;
+
+  &:hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.light {
+  background-color: $white;
+
+  border: none;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.shopButtonArrow {
+  margin-left: 18px;
+}
