@@ -1,0 +1,60 @@
+@import '../../../scss/variables';
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  height: 81px;
+  max-height: 81px;
+  width: 309px;
+  max-width: 309px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 20px;
+
+  &.error::after {
+    position: absolute;
+    height: 16px;
+    left: 75.4%;
+    right: 0%;
+    top: calc(50% - 16px / 2 - 32.5px);
+    font-size: 12px;
+    line-height: 16px;
+    display: inline-block;
+    content: 'Wrong format';
+    color: red;
+  }
+  &.error > .input_label {
+    color: red;
+  }
+}
+
+.input_label {
+  position: absolute;
+  right: 89.32%;
+  top: calc(50% - 16px / 2 - 32.5px);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.214286px;
+}
+
+.input_text {
+  width: 309px;
+  height: 56px;
+  padding: 0;
+  margin-top: 21px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  text-indent: 16px;
+  color: $black;
+
+  &:focus {
+    outline: none;
+    border-color: $orange;
+  }
+
+  &.error,
+  &.error:focus {
+    color: red;
+    border-color: red;
+  }
+}
