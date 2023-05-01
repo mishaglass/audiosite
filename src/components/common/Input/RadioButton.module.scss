@@ -1,0 +1,36 @@
+@import '../../../scss/variables';
+
+.radioButtonWrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  height: 58px;
+  width: 311px;
+  max-height: 58px;
+  max-width: 311px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: $orange;
+  }
+}
+
+.radio,
+.radioLabel {
+  margin: 0px 0px 0px 16px;
+}
+
+.radio {
+  accent-color: $orange;
+}
+.radioLabel {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
