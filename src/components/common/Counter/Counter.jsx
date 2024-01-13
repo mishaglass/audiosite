@@ -5,7 +5,6 @@ const Counter = ({ quantity }) => {
   let [count, setCount] = useState(1);
 
   const clickHandler = (operationType) => {
-    console.log(count);
     if (operationType === 'plus' && count < quantity) {
       setCount(count + 1);
     }

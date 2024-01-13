@@ -1,8 +1,13 @@
-@import "./variables.scss";
-@import "./reset";
-@import "./fonts";
-@import "./typography.scss";
+@import './variables.scss';
+@import './reset';
+@import './fonts';
+@import './typography.scss';
 
 * {
   font-family: Manrope;
+}
+
+.App {
+  padding: 0 10.31rem 0;
+  background-color: $black;
 }

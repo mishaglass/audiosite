@@ -1,0 +1,19 @@
+@import '../../../scss/_variables';
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $black;
+  height: 6rem;
+  max-height: 6rem;
+  &__link {
+    margin-right: 2.12rem;
+    color: $white;
+  }
+}
+
+.navbar__cart {
+  color: white;
+  align-self: center;
+}
