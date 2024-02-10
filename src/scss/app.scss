@@ -4,10 +4,11 @@
 @import './typography.scss';
 
 * {
-  font-family: Manrope;
+  font-family: Manrope !important;
 }
 
 .App {
   padding: 0 10.31rem 0;
   background-color: $black;
+  height: 100vh;
 }
