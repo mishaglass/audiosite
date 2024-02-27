@@ -3,5 +3,14 @@
 .linkBar {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: $white;
+
+  margin: 7.5rem 0 10rem 0;
+}
+
+@media screen and (max-width: 640px) {
+  .linkBar {
+    flex-direction: column;
+  }
 }

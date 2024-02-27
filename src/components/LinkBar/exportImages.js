@@ -6,17 +6,17 @@ const CardImages = [
   {
     id: 1,
     src: headphonesCard,
-    category: 'Headphones',
+    category: 'HEADPHONES',
   },
   {
     id: 2,
     src: speakersCard,
-    category: 'Speakers',
+    category: 'SPEAKERS',
   },
   {
     id: 3,
     src: earphonesCard,
-    category: 'Earphones',
+    category: 'EARPHONES',
   },
 ];
 
