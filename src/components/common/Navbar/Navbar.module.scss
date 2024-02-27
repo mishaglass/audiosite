@@ -1,23 +1,55 @@
 @import '../../../scss/_variables';
 
 .navbar {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: $black;
   height: 6rem;
   max-height: 6rem;
+  padding: 2rem 0;
   &__link {
     margin-right: 2.12rem;
     color: $white;
     font-size: 0.813rem;
   }
-  &_logo {
+  &__logo {
     margin-right: 2.12rem;
+  }
+  &__hamburger {
+    display: none;
   }
 }
 
 .navbar__cart {
   color: white;
   align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__link {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+    &__logo {
+      margin-left: 2.6rem;
+    }
+    &__cart {
+      margin-left: auto;
+    }
+    &__hamburger {
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+  .navbar {
+    justify-content: space-between;
+    &__cart {
+      margin: 0;
+    }
+  }
 }

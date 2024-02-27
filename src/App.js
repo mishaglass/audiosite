@@ -9,6 +9,7 @@ import RadioButtons from './components/common/Input/RadioButtons';
 import Counter from './components/common/Counter/Counter';
 import Header from './components/Header/Header.jsx';
 import NewProduct from './components/NewProduct/NewProduct.jsx';
+import LinkBar from './components/LinkBar/LinkBar.jsx';
 function App() {
   // const [options, setOptions] = React.useState([
   //   { display: 'e-Money', value: 'e-money', active: false },
@@ -34,8 +35,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <NewProduct />
+      <div className="bgWrapper">
+        <Header />
+        <NewProduct />
+      </div>
+      <LinkBar />
     </div>
   );
 }

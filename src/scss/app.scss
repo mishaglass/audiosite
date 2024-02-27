@@ -7,8 +7,16 @@
   font-family: Manrope !important;
 }
 
-.App {
+.bgWrapper {
   padding: 0 10.31rem 0;
   background-color: $black;
-  height: 100vh;
+  border-radius: 0 0 10px 10px;
+
+  @media screen and (max-width: 920px) {
+    padding: 0 2.5rem 0;
+  }
+
+  @media screen and (max-width: 375px) {
+    padding: 0 1.5rem 0;
+  }
 }

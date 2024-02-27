@@ -9,14 +9,20 @@
   max-width: 100%;
   max-height: 39.5rem;
   height: 100%;
-  display: flex;
 
+  display: flex;
+  justify-content: space-between;
+  background-color: $black;
+  &__picture {
+    margin: 3rem 0 3rem;
+    max-width: 100%;
+  }
+  //TODO replace all px with rem
   &__overline {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 10px;
-    align-self: flex-start;
   }
   &__product {
     margin: 1.5rem 0;
@@ -25,7 +31,10 @@
     margin-top: 2.5rem;
   }
   &__description {
-    padding-right: 3rem;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    max-width: 21.813rem;
   }
 }
 
@@ -33,6 +42,33 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin: 8rem 0 9.875rem 0;
+  max-width: 24.75rem;
+}
+
+@media screen and (max-width: 1215px) {
+  .Info {
+    justify-content: center;
+    &__picture {
+      position: absolute;
+    }
+  }
+  .wrapper {
+    z-index: 2;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Info__product {
+    text-align: center;
+  }
+  .Info__description {
+    text-align: center;
+  }
+
+  .wrapper {
+    margin-bottom: 4rem;
+  }
 }
