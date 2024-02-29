@@ -1,5 +1,5 @@
 import './scss/app.scss';
-import { BUTTON_TYPES, INPUT_TYPES } from './constants';
+//import { BUTTON_TYPES, INPUT_TYPES } from './constants';
 
 import React from 'react';
 
